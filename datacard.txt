@@ -1,0 +1,21 @@
+# number of channels
+imax 1
+# number of background types
+jmax 8
+# number of nuisance parameters (sources of systematical uncertainties)
+kmax *
+#kmax 0
+---------------
+shapes * * @root_input_file@ $PROCESS $PROCESS_$SYSTEMATIC 
+---------------
+bin zh
+observation @num_observed_events@
+------------------------------
+bin                             zh      zh      zh      zh           zh      zh      zh      zh       zh
+process                         signal  QCD     GJets   singleTop    DY      ttbar   Higgs   Diboson  Wjets
+process                         0       1       2       3            4       5       6       7        8
+--------------------------------
+rate @rates@
+--------------------------------
+lumi			 lnN	1.046	1.046	1.046	1.046	     1.046   1.046   1.046    1.046   1.046
+xsec			 lnN	-	1.05	1.05	1.05         1.05    1.05    1.05     1.05    1.05
