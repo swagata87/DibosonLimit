@@ -12,11 +12,11 @@ mass_min=$2
 mass_max=$3
 mass_binning=$4
 
-n_tries_expected=25
+n_tries_expected=30
 n_tries_observed=100
 #n_toys_tot=n_toys_single*n_toys_files
-n_toys_single=5
-n_toys_files=50
+n_toys_single=10
+n_toys_files=100
 TWOn_toys_files=50
 
 mass=${mass_min}

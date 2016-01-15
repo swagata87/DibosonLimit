@@ -50,7 +50,7 @@ void create_input_histos() {
   myfile.open ("txt_out/normalization.txt");
 
   double mass_min=800;
-  double mass_max=1000;
+  double mass_max=1800;
 
   int step_size=200;
 
@@ -118,10 +118,13 @@ void create_input_histos() {
   TString rootfilenames_sig[] = {
     "/user/mukherjee/limits_Diboson/sig/SIGNAL_ZprimeToZhToZlephtata_narrow_M-800_13TeV_MG-skimid3194_out.root",
     "/user/mukherjee/limits_Diboson/sig/SIGNAL_ZprimeToZhToZlephtata_narrow_M-1000_13TeV_MG-skimid3200_out.root",
-    "/user/mukherjee/limits_Diboson/sig/SIGNAL_ZprimeToZhToZlephtata_narrow_M-1600_13TeV_MG-skimid3201_out.root"
+    "/user/mukherjee/limits_Diboson/sig/SIGNAL_ZprimeToZhToZlephtata_narrow_M-1200_13TeV_MG-skimid3193_out.root",
+    "/user/mukherjee/limits_Diboson/sig/SIGNAL_ZprimeToZhToZlephtata_narrow_M-1400_13TeV_MG-skimid3196_out.root",
+    "/user/mukherjee/limits_Diboson/sig/SIGNAL_ZprimeToZhToZlephtata_narrow_M-1600_13TeV_MG-skimid3201_out.root",
+    "/user/mukherjee/limits_Diboson/sig/SIGNAL_ZprimeToZhToZlephtata_narrow_M-1800_13TeV_MG-skimid3197_out.root"
   };
 
-  int sample_names_sig[] = {800, 1000, 1600};
+  int sample_names_sig[] = {800, 1000, 1200, 1400, 1600, 1800};
   const int arraySize_sig = sizeof(sample_names_sig)/sizeof(sample_names_sig[0]);
 
   for (int k = 0; k < arraySize_sig; ++k){

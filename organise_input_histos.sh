@@ -21,7 +21,7 @@ echo "MAKE sure that you edited datacard.txt which is used as input for the limi
 sleep 5
 
 mass_min=800
-mass_max=1000
+mass_max=1800
 
 mass_binning=200
 
